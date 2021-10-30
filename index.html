@@ -1,7 +1,15 @@
-Date.toLocaleTimeString()
+
 
 <h1>Hello! My name is Mohammed Alam and my favorite hobby is hiking</h1>
 
-var d = new Date();
-var n = d.toLocaleTimeString();
+<script>
 
+var today = new Date();
+
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+var dateTime = date+' '+time;
+
+</script>
