@@ -3,8 +3,12 @@
 <h1>Hello! My name is Mohammed Alam and my favorite hobby is hiking</h1>
 <p>Date/Time: <span id="datetime"></span></p>
 
-<script>
-var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
-</script>
+<script type="text/javascript">
+    var clockElement = document.getElementById('clock');
 
+    function clock() {
+        clockElement.textContent = new Date().toString();
+    }
+
+    setInterval(clock, 1000);
+</script>
